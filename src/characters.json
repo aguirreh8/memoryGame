@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Mario",
+    "image": "https://ssbworld.com/images/character-profiles/square/Mario-Profile-Square.png"
+  },
+  {
+    "id": 2,
+    "name": "Link",
+    "image": "https://ssbworld.com/images/character-profiles/square/Link-Profile-Square.png"
+  },
+  {
+    "id": 3,
+    "name": "Kirby",
+    "image": "https://ssbworld.com/images/character-profiles/square/Kirby-Profile-Square.png"
+  },
+  {
+    "id": 4,
+    "name": "Little Mac",
+    "image": "https://ssbworld.com/images/character-profiles/square/Little-Mac-Profile-Square.png"
+  },
+  {
+    "id": 5,
+    "name": "Lucina",
+    "image": "https://ssbworld.com/images/character-profiles/square/Lucina-Profile-Square.png"
+  },
+  {
+    "id": 6,
+    "name": "Luigi",
+    "image": "https://ssbworld.com/images/character-profiles/square/Luigi-Profile-Square.png"
+  },
+  {
+    "id": 7,
+    "name": "Pikachu",
+    "image": "https://ssbworld.com/images/character-profiles/square/Pikachu-Profile-Square.png"
+  },
+  {
+    "id": 8,
+    "name": "Samus",
+    "image": "https://ssbworld.com/images/character-profiles/square/Zero-Suit-Samus-Profile-Square.png"
+  },
+  {
+    "id": 9,
+    "name": "Wario",
+    "image": "https://ssbworld.com/images/character-profiles/square/Wario-Profile-Square.png"
+  }
+]
