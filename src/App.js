@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import Main from "./components/Main";
+import Counters from "./components/Counters"
 import Characters from "./components/Characters";
 import characters from "./characters.json";
 import './App.css';
@@ -16,33 +17,29 @@ class App extends Component {
 
   handleIncrement = (id) => {
     if (this.state.lastId !== id) {
-      this.setState(
-        { 
-          counter: this.state.counter + 1,
-          lastId: id,
-          highScore: 
-            this.state.counter >= this.state.highScore 
-              ? 
-              this.state.counter + 1 : this.state.highScore,
-          characters: this.state.characters.sort(() => Math.random() - 0.5)
-        }
-      )
+      this.setState({ 
+        counter: this.state.counter + 1,
+        lastId: id,
+        highScore: 
+          this.state.counter >= this.state.highScore 
+          ? 
+          this.state.counter + 1 : this.state.highScore,
+        characters: this.state.characters.sort(() => Math.random() - 0.5)
+      })
     }
     else {
-      this.setState(
-        {
-          counter: 0,
-        }
-      )
+      this.setState({ counter: 0 })
     }
-
   };
 
   render() {
     return (
       <Wrapper>
         <Title>Memory Game!</Title>
-        <h1>{this.state.counter} {this.state.highScore}</h1>
+        <Counters 
+            current={this.state.counter}
+            highScore={this.state.highScore}
+            />
         <Main>
           {this.state.characters.map(character => (
             <Characters
