@@ -23,7 +23,8 @@ class App extends Component {
           highScore: 
             this.state.counter >= this.state.highScore 
               ? 
-              this.state.counter + 1 : this.state.highScore
+              this.state.counter + 1 : this.state.highScore,
+          characters: this.state.characters.sort(() => Math.random() - 0.5)
         }
       )
     }
