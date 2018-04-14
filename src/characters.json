@@ -43,5 +43,20 @@
     "id": 9,
     "name": "Wario",
     "image": "https://ssbworld.com/images/character-profiles/square/Wario-Profile-Square.png"
+  },
+  {
+    "id": 10,
+    "name": "Mega Man",
+    "image": "https://ssbworld.com/images/character-profiles/square/Mega-Man-Profile-Square.png"
+  },
+  {
+    "id": 11,
+    "name": "Donkey Kong",
+    "image": "https://ssbworld.com/images/character-profiles/square/Donkey-Kong-Profile-Square.png"
+  },
+  {
+    "id": 12,
+    "name": "Yoshi",
+    "image": "https://ssbworld.com/images/character-profiles/square/Yoshi-Profile-Square.png"
   }
 ]

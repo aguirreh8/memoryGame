@@ -1,3 +1,4 @@
+// Import components and styles
 import React, { Component } from 'react';
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
@@ -7,7 +8,13 @@ import Characters from "./components/Characters";
 import characters from "./characters.json";
 import './App.css';
 
+// Initiate react component
+// Component needed for rendering and states
 class App extends Component {
+
+  // Store data in state
+  // characters = array from .json, counter = current score count
+  // highScore = recorded high score
   state = {
     characters,
     lastId: 0,
@@ -15,6 +22,11 @@ class App extends Component {
     highScore: 0,
   };
 
+  // Handle count and game progression
+  // Check first if clicked image's ID matches last clicked ID from state
+  // True: Add 1 to counter, store new ID to state, mod highScore if
+  // counter is higher, shuffle state character array and render
+  // False: Set counter to 0 and render
   handleIncrement = (id) => {
     if (this.state.lastId !== id) {
       this.setState({ 
@@ -32,8 +44,11 @@ class App extends Component {
     }
   };
 
+  // Render components
   render() {
+    // Return statement required
     return (
+      // Overall wrapper for page
       <Wrapper>
         <Title>Memory Game!</Title>
         <Counters 
